@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main1.master.cs" Inherits="main1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>SPV Share Experts</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="theme/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="theme/assets/css/noscript.css" /></noscript>
+    <link rel="icon" type="image/png" href="images/Logo.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <script type="text/javascript" src='<%= ResolveClientUrl("~/JavaScript/javaScript.js") %>'></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+ 
+</head>
+<body>
+    <section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+                            <li>SVP Share Experts</li>
+                            <li><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Company_Logo.png" Width="14em" CssClass="logo" /></li>
+                            <li><asp:Label ID="nameLBL" runat="server" Text=""></asp:Label></li>
+							<li><a href="home.aspx" id="homemenu">Home</a></li>
+							<li><a href="prediction.aspx" id="predictmenu">Predict</a></li>
+							<li><a href="login.aspx" id="loginmenu">Login</a></li>
+                            
+                            <li></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+    <form id="form1" runat="server">
+       
+          <div class="sign" id="sign">
+              <asp:Button ID="adminPageBTN" runat="server" Text="Admin Login" OnClick="adminPageBTN_Click"/>
+        <asp:Button ID="signoutBTN" runat="server" Text="Sign Out" OnClick="signoutBTN_Click"/>
+        <asp:Button ID="signinBTN" runat="server" Text="Sign In" OnClick="signinBTN_Click" />
+        </div>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+    
+    </form>
+    <!-- Scripts -->
+			<script src="theme/assets/js/jquery.min.js"></script>
+			<script src="theme/assets/js/jquery.scrollex.min.js"></script>
+			<script src="theme/assets/js/jquery.scrolly.min.js"></script>
+			<script src="theme/assets/js/browser.min.js"></script>
+			<script src="theme/assets/js/breakpoints.min.js"></script>
+			<script src="theme/assets/js/util.js"></script>
+			<script src="theme/assets/js/main.js"></script>
+</body>
+</html>

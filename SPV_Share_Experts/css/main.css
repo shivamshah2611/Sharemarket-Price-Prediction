@@ -1,0 +1,15 @@
+﻿.sign{
+    position:absolute;
+    top:4px;
+    right:2px;
+}
+.signout:hover
+{
+    background-color:blanchedalmond;
+}
+body {
+   height:100%;
+}
+.big {
+    margin-left:19em;
+}
